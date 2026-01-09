@@ -2,14 +2,14 @@
   "puzzles": [
     {
       "id": "math",
-      "question": "What is 2 + 2?",
-      "answerHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "question": "Find the determinant of the 2x2 matrix [[3,1],[2,4]]",
+      "answerHash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "type": "math"
     },
     {
       "id": "physics",
-      "question": "What is the speed of light in m/s? (rounded to nearest hundred million)",
-      "answerHash": "d4546796f36ef1b317d1ea87e3e44dff92c2dbb3abd196260b2976e38b17e106",
+      "question": "What is Planck's constant in J·s? (Use scientific notation, e.g., 6.63e-34)",
+      "answerHash": "bb74dbea24e0b1b1222bcb3fa0d5fe359dee091238c8f617be557f123f55509a",
       "type": "physics"
     },
     {
