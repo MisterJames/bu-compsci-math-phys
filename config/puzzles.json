@@ -8,8 +8,8 @@
     },
     {
       "id": "physics",
-      "question": "What is Planck's constant in J·s? (Use scientific notation, e.g., 1.23e-45)",
-      "answerHash": "bb74dbea24e0b1b1222bcb3fa0d5fe359dee091238c8f617be557f123f55509a",
+      "question": "A ball is dropped from rest. After 3 seconds, what is its velocity in m/s? (Use g = 10 m/s²)",
+      "answerHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
       "type": "physics"
     },
     {
