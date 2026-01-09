@@ -1,0 +1,21 @@
+{
+  "puzzles": [
+    {
+      "id": "math",
+      "question": "What is 2 + 2?",
+      "answerHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "type": "math"
+    },
+    {
+      "id": "physics",
+      "question": "What is the speed of light in m/s? (rounded to nearest hundred million)",
+      "answerHash": "d4546796f36ef1b317d1ea87e3e44dff92c2dbb3abd196260b2976e38b17e106",
+      "type": "physics"
+    },
+    {
+      "id": "final",
+      "message": "Where did I hang out at BU?",
+      "type": "final"
+    }
+  ]
+}

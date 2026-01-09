@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU Puzzle Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BU Puzzle Challenge</h1>
+        
+        <div id="puzzle-container">
+            <div id="math-puzzle" class="puzzle">
+                <h2>Math Puzzle</h2>
+                <p id="math-question" class="question"></p>
+                <input type="text" id="math-answer" class="answer-input" placeholder="Enter your answer">
+                <button onclick="checkAnswer('math')" class="submit-btn">Submit</button>
+                <p id="math-feedback" class="feedback"></p>
+            </div>
+
+            <div id="physics-puzzle" class="puzzle hidden">
+                <h2>Physics Puzzle</h2>
+                <p id="physics-question" class="question"></p>
+                <input type="text" id="physics-answer" class="answer-input" placeholder="Enter your answer">
+                <button onclick="checkAnswer('physics')" class="submit-btn">Submit</button>
+                <p id="physics-feedback" class="feedback"></p>
+            </div>
+
+            <div id="final-message" class="puzzle hidden">
+                <h2>Congratulations! 🎉</h2>
+                <p id="final-text" class="final-message"></p>
+            </div>
+        </div>
+
+        <button onclick="resetProgress()" class="reset-btn">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
