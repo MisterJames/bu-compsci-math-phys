@@ -22,7 +22,7 @@ async function loadPuzzles() {
     try {
         const response = await fetch('config/puzzles.json');
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+            throw new Error(`Failed to load puzzles: HTTP ${response.status} ${response.statusText}`);
         }
         puzzlesData = await response.json();
         
@@ -46,9 +46,18 @@ async function loadPuzzles() {
 
 // Load progress from localStorage
 function loadProgress() {
-    const savedProgress = localStorage.getItem('puzzleProgress');
-    if (savedProgress) {
-        currentProgress = JSON.parse(savedProgress);
+    try {
+        const savedProgress = localStorage.getItem('puzzleProgress');
+        if (savedProgress) {
+            currentProgress = JSON.parse(savedProgress);
+        }
+    } catch (error) {
+        console.error('Error loading progress from localStorage:', error);
+        // Reset to default if corrupted
+        currentProgress = {
+            mathCompleted: false,
+            physicsCompleted: false
+        };
     }
 }
 
@@ -164,7 +173,9 @@ function resetProgress() {
 
 // Add event listeners for Enter key
 document.addEventListener('DOMContentLoaded', () => {
-    init();
+    init().catch(error => {
+        console.error('Initialization failed:', error);
+    });
     
     // Allow Enter key to submit answers
     document.getElementById('math-answer').addEventListener('keypress', (e) => {
