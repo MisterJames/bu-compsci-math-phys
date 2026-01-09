@@ -20,7 +20,10 @@ async function init() {
 // Load puzzles from JSON file
 async function loadPuzzles() {
     try {
-        const response = await fetch('/config/puzzles.json');
+        const response = await fetch('config/puzzles.json');
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
         puzzlesData = await response.json();
         
         // Set questions in the UI
@@ -33,6 +36,11 @@ async function loadPuzzles() {
         document.getElementById('final-text').textContent = finalPuzzle.message;
     } catch (error) {
         console.error('Error loading puzzles:', error);
+        // Show error message to user
+        const container = document.getElementById('puzzle-container');
+        if (container) {
+            container.innerHTML = '<div class="puzzle"><h2>Error</h2><p class="feedback incorrect">Failed to load puzzles. Please refresh the page.</p></div>';
+        }
     }
 }
 
