@@ -8,7 +8,7 @@
     },
     {
       "id": "physics",
-      "question": "What is Planck's constant in J·s? (Use scientific notation, e.g., 6.63e-34)",
+      "question": "What is Planck's constant in J·s? (Use scientific notation, e.g., 1.23e-45)",
       "answerHash": "bb74dbea24e0b1b1222bcb3fa0d5fe359dee091238c8f617be557f123f55509a",
       "type": "physics"
     },
