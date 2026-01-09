@@ -1,0 +1,21 @@
+{
+  "puzzles": [
+    {
+      "id": "math",
+      "question": "Find the determinant of the 2x2 matrix [[3,1],[2,4]]",
+      "answerHash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "type": "math"
+    },
+    {
+      "id": "physics",
+      "question": "What is Planck's constant in J·s? (Use scientific notation, e.g., 1.23e-45)",
+      "answerHash": "bb74dbea24e0b1b1222bcb3fa0d5fe359dee091238c8f617be557f123f55509a",
+      "type": "physics"
+    },
+    {
+      "id": "final",
+      "message": "Where did I hang out at BU?",
+      "type": "final"
+    }
+  ]
+}
